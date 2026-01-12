@@ -1,0 +1,278 @@
+PROMPT FOR UPGRADE THIS TO NEXT LEVEL 
+🔹 PROJECT CONTEXT
+
+You are working on an end-to-end stock price prediction and analysis web application.
+
+Current Stack:
+
+Python
+
+TensorFlow (LSTM)
+
+yfinance
+
+scikit-learn
+
+Streamlit (frontend)
+
+Saved model (lstm_stock_model.h5)
+
+Saved scaler (scaler.pkl)
+
+The app currently:
+
+Predicts next-day closing price using an LSTM model
+
+Displays line charts
+
+Uses only the Close price as input
+
+Has no trading signals, indicators, or real market charts
+
+🔹 OBJECTIVE
+
+Upgrade this project into a real-world stock market–style AI decision support system, similar to TradingView/Yahoo Finance (for learning purposes only).
+
+This includes:
+
+Professional candlestick charts
+
+Technical indicators
+
+AI-assisted Buy / Sell / Hold signals
+
+Explainable recommendations
+
+Backend logic improvements
+
+Frontend UI/UX upgrades
+
+Model evaluation & comparison
+
+⚠️ This project must remain educational, not financial advice.
+
+🔹 BACKEND TASKS (MANDATORY)
+1️⃣ Data Engineering
+
+Fetch Open, High, Low, Close, Volume (OHLCV) data using yfinance
+
+Ensure proper handling of missing data
+
+Allow dynamic stock symbols
+
+2️⃣ Feature Engineering
+
+Add the following indicators:
+
+Simple Moving Average (20, 50)
+
+Exponential Moving Average
+
+RSI (14)
+
+MACD
+
+Volume Moving Average
+
+These indicators must be:
+
+Computed dynamically
+
+Stored in a DataFrame
+
+Reusable by frontend & model logic
+
+3️⃣ AI Model Improvements
+
+Keep existing LSTM model
+
+Add optional support for:
+
+Multi-feature input (OHLC + indicators)
+
+Multi-day forecasting (optional but recommended)
+
+Add evaluation metrics:
+
+RMSE
+
+MAE
+
+Directional accuracy
+
+Log results clearly.
+
+4️⃣ Buy / Sell / Hold Signal Logic
+
+Implement rule-based signals (not blind AI output):
+
+BUY Signal:
+
+RSI < 30
+
+Price above 50-day MA
+
+LSTM predicts upward movement
+
+SELL Signal:
+
+RSI > 70
+
+Price below 50-day MA
+
+LSTM predicts downward movement
+
+HOLD:
+
+Conflicting or weak signals
+
+Each signal must return:
+
+Signal type (BUY / SELL / HOLD)
+
+Confidence level (Low / Medium / High)
+
+Explanation (human-readable)
+
+5️⃣ Explainability Layer
+
+For each recommendation:
+
+Explain why the signal was generated
+
+List indicator values
+
+Show model trend direction
+
+No black-box outputs.
+
+🔹 FRONTEND TASKS (MANDATORY)
+6️⃣ Real-World Stock Charts
+
+Replace line charts with:
+
+Candlestick charts (red/green candles)
+
+Display:
+
+OHLC data
+
+Volume bars
+
+Moving averages overlay
+
+Use professional visualization libraries:
+
+plotly
+
+mplfinance
+
+7️⃣ UI / UX Improvements
+
+TradingView-like layout:
+
+Left → chart
+
+Right → indicators + signals
+
+Highlight:
+
+Current trend
+
+Buy/Sell/Hold badge
+
+Color-coded signals:
+
+🟢 Buy
+
+🔴 Sell
+
+🟡 Hold
+
+8️⃣ Prediction Visualization
+
+Show:
+
+Historical prices
+
+Predicted next price
+
+Optional multi-day forecast
+
+Plot actual vs predicted values
+
+9️⃣ Risk & Safety
+
+Add clear disclaimer:
+
+“This tool is for educational purposes only and not financial advice.”
+
+Do not auto-execute trades.
+
+🔹 QUALITY & ENGINEERING STANDARDS
+
+Modular code structure
+
+Clean separation:
+
+data/
+
+indicators/
+
+model/
+
+signals/
+
+ui/
+
+Add docstrings & comments
+
+Avoid hard-coded values
+
+Handle edge cases gracefully
+
+Optimize for readability and maintainability
+
+🔹 FINAL DELIVERABLES
+
+The final system must:
+
+Look like a real stock market dashboard
+
+Provide interpretable AI-assisted insights
+
+Be suitable for:
+
+College evaluation
+
+GitHub portfolio
+
+LinkedIn showcase
+
+Clearly demonstrate:
+
+ML knowledge
+
+Time-series understanding
+
+UI/UX thinking
+
+Ethical AI usage
+
+🔹 IMPORTANT CONSTRAINTS
+
+Do NOT claim guaranteed profits
+
+Do NOT create an autonomous trading bot
+
+Focus on decision support, not financial advice
+
+🔹 SUCCESS CRITERIA
+
+If completed correctly, this project should be:
+
+More advanced than typical student projects
+
+Comparable to beginner–intermediate industry dashboards
+
+Easily explainable to professors and recruiters
