@@ -185,7 +185,7 @@ def handle_missing_data(df):
         return df
     
     # Forward fill then backward fill for any remaining NaNs
-    df = df.fillna(method='ffill').fillna(method='bfill')
+    df = df.ffill().bfill()
     
     # If still has NaNs, drop those rows
     df = df.dropna()
