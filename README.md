@@ -69,21 +69,19 @@ Inspired by platforms like **TradingView** and **Yahoo Finance**, this project i
 
 ## 🧠 System Architecture
 
-.
-├── app.py # Streamlit dashboard
-├── train_model.py # LSTM training script
-├── requirements.txt # Dependencies
-├── scaler.pkl # Saved scaler
-├── lstm_stock_model.h5 # Trained model
-│
-├── utils/
-│ ├── data_handler.py # Data fetching & preprocessing
-│ ├── indicators.py # Technical indicators
-│ ├── signals.py # Buy/Sell/Hold logic
-│ ├── model_utils.py # Prediction & evaluation
-│ └── visualizations.py # Charts & plots
-│
-└── README.md
+| Component | Description |
+|---------|------------|
+| `app.py` | Streamlit dashboard and UI |
+| `train_model.py` | LSTM model training |
+| `requirements.txt` | Python dependencies |
+| `scaler.pkl` | Saved data scaler |
+| `lstm_stock_model.h5` | Trained LSTM model |
+| `utils/data_handler.py` | Stock data fetching & preprocessing |
+| `utils/indicators.py` | Technical indicator calculations |
+| `utils/signals.py` | Buy / Sell / Hold logic |
+| `utils/model_utils.py` | Predictions & evaluation |
+| `utils/visualizations.py` | Charts & plots |
+
 
 ---
 
